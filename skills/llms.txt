@@ -1,0 +1,13 @@
+taste-skill: 預設的設計 skill（v2 實驗版）。讀懂 brief、推論設計語言、調校三個旋鈕（VARIANCE / MOTION / DENSITY），然後產出不像套版的 landing page、作品集與改版設計。包含 brief 推論、設計系統對照表、em dash 禁令、GSAP 程式碼骨架、硬性規則起飛前檢查。正朝 v2.0.0 穩定版持續迭代中。
+taste-skill-v1: taste-skill 的原始 v1 版本，為依賴其精確行為的專案保留。目前預設版本是 `design-taste-frontend`（v2 實驗版）。
+gpt-taste: 頂尖 Awwwards 等級的前端設計與 GSAP 動效 skill，用於產生高級、確定性、反 slop 的 UI。
+image-to-code-skill: 圖片優先的前端 skill，用於產生高級網站參考圖、深入分析它們，並實作出相符的程式碼。
+imagegen-frontend-web: 純圖片生成 skill，用於製作高級網站設計參考圖。不寫程式碼。
+imagegen-frontend-mobile: 純圖片生成 skill，用於製作高級行動 App 畫面概念與流程。不寫程式碼。
+brandkit: 純圖片生成 skill，用於製作高級品牌識別總覽圖，包含 logo 概念、識別系統、色盤、字體排印與 mockup。不寫程式碼。
+redesign-skill: 用於升級既有專案，稽核並修正設計問題。
+soft-skill: 專注於昂貴、柔和的 UI 質感，搭配高級字體、留白、深度與流暢動畫。
+output-skill: 防止 AI 偷懶、跳過程式碼區塊或使用佔位註解。
+minimalist-skill: 強制乾淨、編輯風格的介面（Notion/Linear 風），採用嚴格的單色色盤。
+brutalist-skill: 原始的機械感介面、瑞士風格字體排印、極端的尺度對比。（Beta）
+stitch-skill: 相容 Google Stitch 的語意化設計規則，用於高級 AI UI 生成。
