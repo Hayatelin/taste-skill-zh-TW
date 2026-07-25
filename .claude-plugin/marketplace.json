@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "taste-skill-zh-TW",
+  "description": "Taste Skill 繁體中文版：讓 AI 做出來的介面不再有 AI 味，涵蓋版面、字體排印、動態與間距的設計規範。",
+  "owner": {
+    "name": "VictorLin",
+    "url": "https://github.com/Hayatelin"
+  },
+  "plugins": [
+    {
+      "name": "taste-skill-zh-TW",
+      "description": "Taste Skill 繁體中文版：讓 AI 做出來的介面不再有 AI 味，涵蓋版面、字體排印、動態與間距的設計規範。",
+      "source": "./",
+      "category": "design"
+    }
+  ]
+}

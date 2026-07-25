@@ -58,6 +58,15 @@ taste-skill 的做法是在動手之前先強制 agent 讀懂情境——這是�
 
 ### Claude Code
 
+**方式一：plugin marketplace（最快）**
+
+```
+/plugin marketplace add Hayatelin/taste-skill-zh-TW
+/plugin install taste-skill-zh-TW@taste-skill-zh-TW
+```
+
+**方式二：手動複製**
+
 ```bash
 git clone https://github.com/Hayatelin/taste-skill-zh-TW.git
 cp -r taste-skill-zh-TW/skills/* ~/.claude/skills/
