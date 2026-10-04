@@ -1,0 +1,33 @@
+name: Fence check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  fence-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check ``` fences are balanced in every .md file
+        shell: bash
+        run: |
+          set -euo pipefail
+          fail=0
+          checked=0
+          while IFS= read -r -d '' f; do
+            checked=$((checked + 1))
+            n=$(grep -cE '^[[:space:]]*```' "$f" || true)
+            if [ $((n % 2)) -ne 0 ]; then
+              echo "::error file=${f#./}::odd number of \`\`\` fences: $n"
+              echo "FAIL  ${f#./}  ($n)"
+              fail=1
+            fi
+          done < <(find . -type f -name '*.md' -not -path './.git/*' -print0 | sort -z)
+          echo "Checked $checked .md file(s)."
+          if [ "$fail" -ne 0 ]; then
+            echo "Some files have an odd number of line-leading \`\`\` fences."
+            exit 1
+          fi
+          echo "All fences balanced."
